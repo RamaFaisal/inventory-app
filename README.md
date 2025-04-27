@@ -24,13 +24,15 @@ di bawah 5 unit)
 5. Membuat migration tabel `items`, `categories`, `admins`, `suppliers`
 6. Membuat model `Item`, `categories`, `admins`, `suppliers`
 7. Membuat seeder `ItemSeeder`, `CategorySeeder`, `AdminSeeder`, `SupplierSeeder`
-8. Menulis routing api sederhana untuk menampilkan semua items
-9. Build docker container:
+8. Membuat controller untuk fitur yang diinginkan
+9. Menulis routing api sederhana untuk menampilkan semua items
+10. Build docker container:
    - `docker-compose up --build`
-10. Jalankan migration dan seeder:
+11. Jalankan migration dan seeder:
    - `docker-compose exec app php artisan migrate --seed`
-11. Testing aplikasi di `http://localhost:8000`
-12. Testing phpmyadmin di `http://localhost:8080`
+12. Testing aplikasi di `http://localhost:8000`
+13. Testing phpmyadmin di `http://localhost:8080`
+14. Karena menggunakan json, jadi saya menggunakan Postman untuk test fiturnya
 
 ## Struktur Container
 
