@@ -28,6 +28,7 @@ di bawah 5 unit)
 9. Build docker container:
    - `docker-compose up --build`
 10. Jalankan migration dan seeder:
+   - `docker-compose exec app php artisan migrate --seed`
 11. Testing aplikasi di `http://localhost:8000`
 12. Testing phpmyadmin di `http://localhost:8080`
 
@@ -36,3 +37,12 @@ di bawah 5 unit)
 - app: Laravel PHP
 - db: MySQL database
 - phpmyadmin: GUI database
+
+## Beberapa perintah docker yang saya gunakan
+
+`docker-compose up -d` -> Digunakan untuk menjalankan service docker
+`docker-compose exec app php artisan migrate --seed` -> Digunakan untuk menjalankan migrasi dan seeder di laravel docker
+
+## Push Github
+
+Saya menggunakan extension source control di VScode karena lebih mudah jadi tidak ada perintah git init dll.
