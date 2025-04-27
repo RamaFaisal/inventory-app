@@ -1,0 +1,38 @@
+# Inventory App - UTS Backend
+
+## Deskripsi
+
+Project ini dibuat untuk memenuhi tugas UTS Backend Development dengan Laravel 10, MySQL, dan Docker.
+
+## Fitur
+
+• Create + Read untuk data item
+• Create + Read untuk data kategori
+• Create + Read untuk data supplier
+• Menampilkan ringkasan stok barang termasuk stok total, total nilai stok (harga x 
+jumlah), dan rata-rata harga barang.
+• Menampilkan daftar barang yang stoknya di bawah ambang batas tertentu (misalkan 
+di bawah 5 unit)
+
+## Step Pengerjaan
+
+1. Inisialisasi project Laravel:
+   - `laravel new inventory-app`
+2. Membuat Dockerfile dan docker-compose.yml
+3. Setup Laravel agar compatible di Docker (document root public)
+4. Setup `.env` agar connect ke database `db`
+5. Membuat migration tabel `items`, `categories`, `admins`, `suppliers`
+6. Membuat model `Item`, `categories`, `admins`, `suppliers`
+7. Membuat seeder `ItemSeeder`, `CategorySeeder`, `AdminSeeder`, `SupplierSeeder`
+8. Menulis routing api sederhana untuk menampilkan semua items
+9. Build docker container:
+   - `docker-compose up --build`
+10. Jalankan migration dan seeder:
+11. Testing aplikasi di `http://localhost:8000`
+12. Testing phpmyadmin di `http://localhost:8080`
+
+## Struktur Container
+
+- app: Laravel PHP
+- db: MySQL database
+- phpmyadmin: GUI database
